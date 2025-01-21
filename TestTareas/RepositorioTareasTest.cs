@@ -31,7 +31,7 @@ namespace TestTareas
                         $"Titulo: {tarea.Titulo}\n" +
                         $"Descripcion: {tarea.Descripcion}\n" +
                         $"Completada: {tarea.Completada}\n" +
-                        $"FechaCreacion: {tarea.FechaCreacion:yyyy-MM-dd HH:mm:ss}\n";
+                        $"FechaCreacion: {tarea.FechaCreacion:yyyy-MM-dd}\n";
 
 
             Assert.Equal(resultadoEsperado, tareaAgregada.MostrarTarea()); // verifica que la tarea agregada sea la misma que la tarea buscada

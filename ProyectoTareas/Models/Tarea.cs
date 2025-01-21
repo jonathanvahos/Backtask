@@ -28,7 +28,11 @@
             set { completada = value; }
         }
 
-        // Constructor de la clase
+        // Constructor vacio rrequerido por Entity Framework
+
+        public Tarea() : base()
+        {
+        }
 
         public Tarea(string titulo, string descripcion, Boolean completada) : base()
         {
@@ -45,7 +49,7 @@
            $"Titulo: {Titulo}\n" +
            $"Descripcion: {Descripcion}\n" +
            $"Completada: {Completada}\n" +
-           $"FechaCreacion: {FechaCreacion:yyyy-MM-dd HH:mm:ss}\n";
+           $"FechaCreacion: {FechaCreacion:yyyy-MM-dd}\n";
         }
     }
 }

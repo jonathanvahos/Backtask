@@ -1,4 +1,7 @@
 
+using Microsoft.EntityFrameworkCore;
+using ProyectoTareas.Data;
+
 namespace ProyectoTareas
 {
     public class Program
@@ -7,7 +10,12 @@ namespace ProyectoTareas
         {
             var builder = WebApplication.CreateBuilder(args);
 
-            // Add services to the container.
+            // Agregar EF Core al contenedor de servicios.
+
+            builder.Services.AddDbContext<TareasDbContext>(options =>
+            {
+                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+            });
 
             builder.Services.AddControllers();
             // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
