@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{D23DE0C5-3C79-418D-933F-92443675C3A2}|TestTareas\\TestTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\testtareas\\repositoriotareastest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -58,7 +58,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -75,13 +75,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\WeatherForecast.cs",
               "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\WeatherForecast.cs",
               "RelativeToolTip": "ProyectoTareas\\WeatherForecast.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAA5wAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T21:54:19.421Z",
               "EditorCaption": ""
@@ -120,8 +120,7 @@
               "RelativeToolTip": "ProyectoTareas\\Models\\TareaBase.cs",
               "ViewState": "AgIAAA0AAAAAAAAAAAAgwBsAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T15:49:13.367Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T15:49:13.367Z"
             },
             {
               "$type": "Document",
@@ -137,7 +136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Program.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Program.cs",
@@ -158,8 +157,7 @@
               "RelativeToolTip": "TestTareas\\RepositorioTareasTest.cs",
               "ViewState": "AgIAAHEAAAAAAAAAAAA8wBYAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:28:01.943Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-20T20:28:01.943Z"
             },
             {
               "$type": "Document",
