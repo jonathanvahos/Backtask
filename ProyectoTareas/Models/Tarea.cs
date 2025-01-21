@@ -30,18 +30,22 @@
 
         // Constructor de la clase
 
-        public Tarea(string titulo, string descripcion)
+        public Tarea(string titulo, string descripcion, Boolean completada) : base()
         {
             Titulo = titulo;
             Descripcion = descripcion;
-            Completada = false;
+            Completada = completada;
         }
 
         // Metodo que muestra la tarea
 
         public override string MostrarTarea()
         {
-            return $"Tarea ID: {Id}Titulo: {Titulo} \nDescripcion: {Descripcion} \nCompletada: {Completada}";
+            return $"Tarea ID: {Id}\n" +
+           $"Titulo: {Titulo}\n" +
+           $"Descripcion: {Descripcion}\n" +
+           $"Completada: {Completada}\n" +
+           $"FechaCreacion: {FechaCreacion:yyyy-MM-dd HH:mm:ss}\n";
         }
     }
 }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoTareas.Models
 {
-    // implementacion de la interfaz IOpereaciones para menjar las tareas
+    // implementacion de la interfaz IOpereaciones para manejar las tareas
     public class RepositorioTareas : IOpereaciones<Tarea>
     {
         //lista interna para almacenar las tareas
@@ -19,9 +19,9 @@
         }
 
         //metodo para obtener todas las tareas
-        public IOpereaciones<Tarea> ObtenerTodos()
+        public List<Tarea> ObtenerTodos()
         {
-            return (IOpereaciones<Tarea>)tareas;
+            return tareas;
         }
 
         //metodo para actualizar una tarea
