@@ -28,14 +28,14 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "tarea",
-        "Type": "ProyectoTareas.Models.Tarea",
+        "Name": "tareaDto",
+        "Type": "ProyectoTareas.Models.TareaDTO",
         "IsRequired": true
       }
     ],
     "ReturnTypes": [
       {
-        "Type": "ProyectoTareas.Models.Tarea",
+        "Type": "ProyectoTareas.Models.TareaDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -61,7 +61,7 @@
     ],
     "ReturnTypes": [
       {
-        "Type": "ProyectoTareas.Models.Tarea",
+        "Type": "ProyectoTareas.Models.TareaDTO",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -85,8 +85,8 @@
         "IsRequired": true
       },
       {
-        "Name": "tarea",
-        "Type": "ProyectoTareas.Models.Tarea",
+        "Name": "tareaDto",
+        "Type": "ProyectoTareas.Models.TareaDTO",
         "IsRequired": true
       }
     ],

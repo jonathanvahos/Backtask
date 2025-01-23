@@ -50,17 +50,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             }
           }
@@ -71,17 +71,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               }
             }
@@ -111,17 +111,17 @@
             "content": {
               "text/plain": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               },
               "application/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               },
               "text/json": {
                 "schema": {
-                  "$ref": "#/components/schemas/Tarea"
+                  "$ref": "#/components/schemas/TareaDTO"
                 }
               }
             }
@@ -147,17 +147,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Tarea"
+                "$ref": "#/components/schemas/TareaDTO"
               }
             }
           }
@@ -243,6 +243,23 @@
             "type": "string",
             "format": "date-time"
           },
+          "titulo": {
+            "type": "string",
+            "nullable": true
+          },
+          "descripcion": {
+            "type": "string",
+            "nullable": true
+          },
+          "completada": {
+            "type": "boolean"
+          }
+        },
+        "additionalProperties": false
+      },
+      "TareaDTO": {
+        "type": "object",
+        "properties": {
           "titulo": {
             "type": "string",
             "nullable": true
