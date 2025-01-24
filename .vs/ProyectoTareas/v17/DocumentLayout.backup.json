@@ -3,28 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D23DE0C5-3C79-418D-933F-92443675C3A2}|TestTareas\\TestTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\testtareas\\repositoriotareastest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D23DE0C5-3C79-418D-933F-92443675C3A2}|TestTareas\\TestTareas.csproj|solutionrelative:testtareas\\repositoriotareastest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\tareabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\models\\tareabase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\controllers\\tareascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\models\\tareadto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\mappings\\mappingprofile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\models\\tarea.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\repositoriotareas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,20 +39,12 @@
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\migrations\\tareasdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\models\\iopereaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\models\\iopereaciones.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|solutionrelative:proyectotareas\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{D23DE0C5-3C79-418D-933F-92443675C3A2}|TestTareas\\TestTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\testtareas\\repositoriotareastest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{D23DE0C5-3C79-418D-933F-92443675C3A2}|TestTareas\\TestTareas.csproj|solutionrelative:testtareas\\repositoriotareastest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D7FFDBE-A190-4A9E-AD0B-665056E27E92}|ProyectoTareas\\ProyectoTareas.csproj|c:\\users\\jonathan.vahos\\onedrive - softwareone\\desktop\\proyecto practica\\proyectotareas\\proyectotareas\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
@@ -74,13 +70,13 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "Tarea.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\Tarea.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Models\\Tarea.cs",
               "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\Tarea.cs",
               "RelativeToolTip": "ProyectoTareas\\Models\\Tarea.cs",
-              "ViewState": "AgIAABoAAAAAAAAAAAAwwCgAAAAkAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-20T16:05:09.452Z",
               "IsPinned": true,
@@ -88,13 +84,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Program.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Program.cs",
               "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Program.cs",
               "RelativeToolTip": "ProyectoTareas\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-21T15:19:56.425Z",
               "IsPinned": true,
@@ -103,6 +99,58 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "TareaBase.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaBase.cs",
+              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\TareaBase.cs",
+              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaBase.cs",
+              "RelativeToolTip": "ProyectoTareas\\Models\\TareaBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-24T15:07:44.044Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TareasController.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Controllers\\TareasController.cs",
+              "RelativeDocumentMoniker": "ProyectoTareas\\Controllers\\TareasController.cs",
+              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Controllers\\TareasController.cs",
+              "RelativeToolTip": "ProyectoTareas\\Controllers\\TareasController.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAowDYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-21T15:35:22.817Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TareaDTO.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaDTO.cs",
+              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\TareaDTO.cs",
+              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaDTO.cs",
+              "RelativeToolTip": "ProyectoTareas\\Models\\TareaDTO.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-23T15:17:31.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepositorioTareasTest.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\TestTareas\\RepositorioTareasTest.cs",
+              "RelativeDocumentMoniker": "TestTareas\\RepositorioTareasTest.cs",
+              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\TestTareas\\RepositorioTareasTest.cs",
+              "RelativeToolTip": "TestTareas\\RepositorioTareasTest.cs",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwBYAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T20:28:01.943Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "MappingProfile.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Mappings\\MappingProfile.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Mappings\\MappingProfile.cs",
@@ -115,58 +163,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "TareaDTO.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaDTO.cs",
-              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\TareaDTO.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaDTO.cs",
-              "RelativeToolTip": "ProyectoTareas\\Models\\TareaDTO.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-23T15:17:31.042Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "RepositorioTareas.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\RepositorioTareas.cs",
-              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\RepositorioTareas.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\RepositorioTareas.cs",
-              "RelativeToolTip": "ProyectoTareas\\Models\\RepositorioTareas.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T19:56:36.133Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "TareasController.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Controllers\\TareasController.cs",
-              "RelativeDocumentMoniker": "ProyectoTareas\\Controllers\\TareasController.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Controllers\\TareasController.cs",
-              "RelativeToolTip": "ProyectoTareas\\Controllers\\TareasController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEsAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T15:35:22.817Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "TareaBase.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaBase.cs",
-              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\TareaBase.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\TareaBase.cs",
-              "RelativeToolTip": "ProyectoTareas\\Models\\TareaBase.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAwwAsAAAAWAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T15:49:13.367Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 9,
               "Title": "IOpereaciones.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\IOpereaciones.cs",
@@ -175,12 +171,23 @@
               "RelativeToolTip": "ProyectoTareas\\Models\\IOpereaciones.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T17:12:31.481Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T17:12:31.481Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "RepositorioTareas.cs",
+              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\RepositorioTareas.cs",
+              "RelativeDocumentMoniker": "ProyectoTareas\\Models\\RepositorioTareas.cs",
+              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Models\\RepositorioTareas.cs",
+              "RelativeToolTip": "ProyectoTareas\\Models\\RepositorioTareas.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-20T19:56:36.133Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "TareasDbContext.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Migrations\\TareasDbContext.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Migrations\\TareasDbContext.cs",
@@ -188,21 +195,7 @@
               "RelativeToolTip": "ProyectoTareas\\Migrations\\TareasDbContext.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAAowAAAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T15:02:12.414Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\WeatherForecast.cs",
-              "RelativeDocumentMoniker": "ProyectoTareas\\WeatherForecast.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\WeatherForecast.cs",
-              "RelativeToolTip": "ProyectoTareas\\WeatherForecast.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T21:54:19.421Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:02:12.414Z"
             },
             {
               "$type": "Document",
@@ -214,12 +207,11 @@
               "RelativeToolTip": "ProyectoTareas\\Properties\\launchSettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-22T16:52:16.415Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-22T16:52:16.415Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 11,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\appsettings.json",
               "RelativeDocumentMoniker": "ProyectoTareas\\appsettings.json",
@@ -227,25 +219,11 @@
               "RelativeToolTip": "ProyectoTareas\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-01-21T15:16:41.773Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:16:41.773Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "RepositorioTareasTest.cs",
-              "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\TestTareas\\RepositorioTareasTest.cs",
-              "RelativeDocumentMoniker": "TestTareas\\RepositorioTareasTest.cs",
-              "ToolTip": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\TestTareas\\RepositorioTareasTest.cs",
-              "RelativeToolTip": "TestTareas\\RepositorioTareasTest.cs",
-              "ViewState": "AgIAAHIAAAAAAAAAAAAmwBYAAAA6AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-20T20:28:01.943Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 13,
               "Title": "20250121153019_InitialCreate.cs",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\Migrations\\20250121153019_InitialCreate.cs",
               "RelativeDocumentMoniker": "ProyectoTareas\\Migrations\\20250121153019_InitialCreate.cs",
@@ -253,12 +231,11 @@
               "RelativeToolTip": "ProyectoTareas\\Migrations\\20250121153019_InitialCreate.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-21T15:30:20.226Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:30:20.226Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 12,
               "Title": "ProyectoTareas.csproj",
               "DocumentMoniker": "C:\\Users\\jonathan.vahos\\OneDrive - SoftwareOne\\Desktop\\Proyecto Practica\\ProyectoTareas\\ProyectoTareas\\ProyectoTareas.csproj",
               "RelativeDocumentMoniker": "ProyectoTareas\\ProyectoTareas.csproj",
@@ -266,8 +243,7 @@
               "RelativeToolTip": "ProyectoTareas\\ProyectoTareas.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-01-21T15:01:39.912Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-21T15:01:39.912Z"
             }
           ]
         }
