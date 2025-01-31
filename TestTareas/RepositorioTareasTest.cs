@@ -88,7 +88,8 @@ namespace TestTareas
             Assert.Contains(tarea2, TodasLastareas); // verifica que la tarea2 este en la lista
         }
 
-        [Fact]
+        
+        [Fact]// prueba unitaria para actualizar una tarea
         public void ActualizarTarea()
         {
             // Arrange preparar el entorno y los datos de prueba

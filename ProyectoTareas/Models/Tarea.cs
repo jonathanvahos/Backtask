@@ -41,7 +41,7 @@
             Completada = completada;
         }
 
-        // Metodo que muestra la tarea
+        // Metodo sobreescrito de TareaBase que muestra la tarea
 
         public override string MostrarTarea()
         {

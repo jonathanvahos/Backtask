@@ -26,7 +26,7 @@ namespace ProyectoTareas
             {
                 options.AddPolicy("AllowLocalhost", policy =>
                 {
-                    policy.WithOrigins("http://localhost:4200")  // URL de tu front-end Angular
+                    policy.WithOrigins("http://localhost:4200")  // URL del front-end Angular
                           .AllowAnyHeader()
                           .AllowAnyMethod();
                 });

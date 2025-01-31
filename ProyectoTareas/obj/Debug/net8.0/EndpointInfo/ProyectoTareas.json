@@ -235,6 +235,10 @@
           },
           "completada": {
             "type": "boolean"
+          },
+          "fechaCreacion": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false
