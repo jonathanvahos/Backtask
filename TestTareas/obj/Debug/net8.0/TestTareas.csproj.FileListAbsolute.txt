@@ -343,3 +343,5 @@ C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\Proyect
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\TestTareas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Drawing.Common.dll
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\TestTareas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\TestTareas\bin\Debug\net8.0\runtimes\win\lib\net7.0\System.Windows.Extensions.dll
+C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\TestTareas\bin\Debug\net8.0\AutoMapper.dll
+C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\TestTareas\bin\Debug\net8.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
