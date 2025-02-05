@@ -1,0 +1,50 @@
+name: .NET CI with Code Coverage
+
+on:
+  push:
+    branches: [ main ]  # Se ejecuta cuando hay un push a la rama main
+  pull_request:
+    branches: [ main ]  # Se ejecuta cuando hay un pull request a la rama main
+
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest  # Usa una máquina virtual con Ubuntu
+
+    steps:
+    # Paso 1: Descargar el código del repositorio
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Paso 2: Configurar .NET
+    - name: Setup .NET
+      uses: actions/setup-dotnet@v3
+      with:
+        dotnet-version: '8.0'  # versión de .NET
+
+    # Paso 3: Restaurar dependencias
+    - name: Restore dependencies
+      run: dotnet restore
+
+    # Paso 4: Compilar el proyecto
+    - name: Build
+      run: dotnet build --configuration Release --no-restore
+
+    # Paso 5: Ejecutar pruebas con cobertura de código
+    - name: Run tests with coverage
+      run: |
+        dotnet test --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
+        dotnet tool install -g dotnet-reportgenerator-globaltool
+        reportgenerator -reports:./**/coverage.opencover.xml -targetdir:./CoverageReport -reporttypes:Html
+
+    # Paso 6: Publicar el informe de cobertura como un artefacto
+    - name: Upload coverage report
+      uses: actions/upload-artifact@v3
+      with:
+        name: coverage-report
+        path: ./CoverageReport
+
+    # Paso 7: Notificar por correo electrónico si el flujo de trabajo falla
+    - name: Notify on failure
+      if: failure()  # Solo se ejecuta si el flujo de trabajo falla
+      run: |
+        echo "Las pruebas han fallado. Revisa los logs en GitHub Actions."
