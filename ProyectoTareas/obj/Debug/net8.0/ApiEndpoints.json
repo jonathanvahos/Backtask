@@ -9,7 +9,7 @@
     "Parameters": [],
     "ReturnTypes": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProyectoTareas.Models.Tarea, ProyectoTareas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[ProyectoTareas.Models.TareaDTO, ProyectoTareas, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
         "MediaTypes": [
           "text/plain",
           "application/json",
@@ -21,7 +21,7 @@
   },
   {
     "ContainingType": "ProyectoTareas.Controllers.TareasController",
-    "Method": "PostTarea",
+    "Method": "PostTareas",
     "RelativePath": "api/Tareas",
     "HttpMethod": "POST",
     "IsController": true,
@@ -94,7 +94,7 @@
   },
   {
     "ContainingType": "ProyectoTareas.Controllers.TareasController",
-    "Method": "DeleteTarea",
+    "Method": "DeleteTareas",
     "RelativePath": "api/Tareas/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,

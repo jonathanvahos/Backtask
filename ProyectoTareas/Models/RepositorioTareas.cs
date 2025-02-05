@@ -1,50 +1,64 @@
-﻿namespace ProyectoTareas.Models
+﻿using Microsoft.EntityFrameworkCore;
+using ProyectoTareas.Data;
+
+namespace ProyectoTareas.Models
 {
     // implementacion de la interfaz IOpereaciones para manejar las tareas
     public class RepositorioTareas : IOpereaciones<Tarea>
     {
-        //lista interna para almacenar las tareas
-        private readonly List<Tarea> tareas = new List<Tarea>();
+        private readonly TareasDbContext _context;
 
-        //metodo para añadir una tarea
-        public void Agregar(Tarea item)
+        public RepositorioTareas(TareasDbContext context)
         {
-            tareas.Add(item);
+            _context = context ?? throw new ArgumentNullException(nameof(context));
         }
 
-        //metodo para buscar una tarea por su ID
-        public Tarea BuscarPorId(Guid id)
+        public RepositorioTareas()
         {
-            return tareas.FirstOrDefault(t => t.Id == id);
         }
 
-        //metodo para obtener todas las tareas
-        public List<Tarea> ObtenerTodos()
+        public async Task AgregarAsync(Tarea item) 
         {
-            return tareas;
+            _context.Tareas.Add(item);
+            await _context.SaveChangesAsync();
         }
 
-        //metodo para actualizar una tarea
-        public void Actualizar(Tarea item)
+        public async Task<Tarea> BuscarPorIdAsync(Guid id)
         {
-            var tarea = BuscarPorId(item.Id);
-            if (tarea != null)
+            return await _context.Tareas.FindAsync(id);
+        }
+
+        public async Task<List<Tarea>> ObtenerTodosAsync()
+        {
+            return await _context.Tareas.ToListAsync();
+        }
+
+        public async Task ActualizarAsync(Tarea item)
+        {
+            var tarea = await _context.Tareas.AsNoTracking().FirstOrDefaultAsync(t => t.Id == item.Id);
+            if (tarea != null) 
             {
-                tarea.Titulo = item.Titulo;
-                tarea.Descripcion = item.Descripcion;
-                tarea.Completada = item.Completada;
+                //perservar la fecha de creacion
+                item.FechaCreacion = tarea.FechaCreacion;
+
+                //marcar la entidad como modificada, excluyendo la fecha de creacion
+                _context.Entry(item).Property(t => t.FechaCreacion).IsModified = false;
+                _context.Entry(item).State = EntityState.Modified;
+
+                await _context.SaveChangesAsync();
             }
         }
 
-        //metodo para eliminar una tarea
-        public void Eliminar(Guid id)
+        public async Task EliminarAsync(Guid id)
         {
-            var tarea = BuscarPorId(id);
-            if (tarea != null)
+            var tarea = await _context.Tareas.FindAsync(id);
+            if (tarea != null) 
             {
-                tareas.Remove(tarea);
+                _context.Tareas.Remove(tarea);
+                await _context.SaveChangesAsync();
             }
         }
+
 
     }
 }

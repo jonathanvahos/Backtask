@@ -1,7 +1,5 @@
 ﻿using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
-using ProyectoTareas.Data;
 using ProyectoTareas.Models;
 
 namespace ProyectoTareas.Controllers
@@ -10,22 +8,23 @@ namespace ProyectoTareas.Controllers
     [ApiController]
     public class TareasController : ControllerBase
     {
-        private readonly TareasDbContext _context;
+        private readonly IOpereaciones<Tarea> _repositorio;
         private readonly IMapper _mapper;
 
-        public TareasController(TareasDbContext context, IMapper mapper)
+        public TareasController(IOpereaciones<Tarea> repositorio, IMapper mapper)
         {
-            _context = context ?? throw new ArgumentNullException(nameof(context));
+            _repositorio = repositorio ?? throw new ArgumentNullException(nameof(repositorio));
             _mapper = mapper ?? throw new ArgumentNullException(nameof(mapper));
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<Tarea>>> GetTareas()
+        public async Task<ActionResult<IEnumerable<TareaDTO>>> GetTareas()
         {
             try
             {
-                var tareas = await _context.Tareas.ToListAsync();
-                return Ok(tareas);
+                var tareas = await _repositorio.ObtenerTodosAsync();
+                var tareasDto = _mapper.Map<IEnumerable<TareaDTO>>(tareas);
+                return Ok(tareasDto);
             }
             catch (Exception ex)
             {
@@ -38,17 +37,11 @@ namespace ProyectoTareas.Controllers
         {
             try
             {
-                if (id == Guid.Empty)
-                {
-                    return BadRequest("El ID proporcionado no es válido.");
-                }
-
-                var tarea = await _context.Tareas.FindAsync(id);
+                var tarea = await _repositorio.BuscarPorIdAsync(id);
                 if (tarea == null)
                 {
-                    return NotFound("La tarea con el ID especificado no existe.");
+                    return NotFound("La tarea no existe.");
                 }
-
                 var tareaDto = _mapper.Map<TareaDTO>(tarea);
                 return Ok(tareaDto);
             }
@@ -59,7 +52,7 @@ namespace ProyectoTareas.Controllers
         }
 
         [HttpPost]
-        public async Task<ActionResult<TareaDTO>> PostTarea(TareaDTO tareaDto)
+        public async Task<ActionResult<TareaDTO>> PostTareas(TareaDTO tareaDto)
         {
             try
             {
@@ -69,15 +62,12 @@ namespace ProyectoTareas.Controllers
                 }
 
                 var tarea = _mapper.Map<Tarea>(tareaDto);
-                _context.Tareas.Add(tarea);
-                await _context.SaveChangesAsync();
-
-                return CreatedAtAction("GetTarea", new { id = tarea.Id }, _mapper.Map<TareaDTO>(tarea));
-                
+                await _repositorio.AgregarAsync(tarea);
+                return CreatedAtAction(nameof(GetTarea), new { id = tarea.Id }, _mapper.Map<TareaDTO>(tarea));
             }
             catch (Exception ex)
             {
-                return StatusCode(500, $"Error al crear la tarea: {ex.Message}");
+                return StatusCode(500, $"Error al agregar la tarea: {ex.Message}");
             }
         }
 
@@ -86,41 +76,40 @@ namespace ProyectoTareas.Controllers
         {
             try
             {
-                var tareaExistente = await _context.Tareas.FindAsync(id);
-                if (tareaExistente == null)
+                if (id != tareaDto.Id)
                 {
-                    return NotFound("La tarea con el ID especificado no existe.");
+                    return BadRequest("Los IDs no coinciden.");
                 }
 
-                tareaExistente.Titulo = tareaDto.Titulo;
-                tareaExistente.Descripcion = tareaDto.Descripcion;
-                tareaExistente.Completada = tareaDto.Completada;
+                var tareaExistente = await _repositorio.BuscarPorIdAsync(id);
+                if (tareaExistente == null)
+                {
+                    return NotFound("La tarea no existe.");
+                }
 
-                _context.Entry(tareaExistente).State = EntityState.Modified;
-                await _context.SaveChangesAsync();
+                _mapper.Map(tareaDto, tareaExistente);
+                await _repositorio.ActualizarAsync(tareaExistente);
 
-                return NoContent();
+                return Ok(new { message = "La tarea fue actualizada correctamente." });
             }
             catch (Exception ex)
             {
-                return Ok(new { message = "La tarea fue actualizada correctamente." });
+                return StatusCode(500, $"Error al actualizar la tarea: {ex.Message}");
             }
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteTarea(Guid id)
+        public async Task<ActionResult> DeleteTareas(Guid id)
         {
             try
             {
-                var tarea = await _context.Tareas.FindAsync(id);
+                var tarea = await _repositorio.BuscarPorIdAsync(id);
                 if (tarea == null)
                 {
                     return NotFound("La tarea no existe.");
                 }
 
-                _context.Tareas.Remove(tarea);
-                await _context.SaveChangesAsync();
-
+                await _repositorio.EliminarAsync(id);
                 return Ok(new { message = "La tarea fue eliminada correctamente." });
             }
             catch (Exception ex)

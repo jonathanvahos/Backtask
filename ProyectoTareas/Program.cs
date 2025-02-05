@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ProyectoTareas.Data;
 using ProyectoTareas.Mappings;
+using ProyectoTareas.Models;
 
 namespace ProyectoTareas
 {
@@ -19,7 +20,15 @@ namespace ProyectoTareas
                 options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
             });
 
+            // Registrar RepositorioTareas
+            builder.Services.AddScoped<IOpereaciones<Tarea>, RepositorioTareas>();
+
+            // Registrar servicios de autorizacion
+            builder.Services.AddAuthorization();
+
+            // Registrar servicios de controladores
             builder.Services.AddControllers();
+
 
             // Agregar la configuración de CORS
             builder.Services.AddCors(options =>
