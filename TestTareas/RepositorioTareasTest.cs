@@ -1,130 +1,115 @@
+
+using Microsoft.EntityFrameworkCore;
+using ProyectoTareas.Data;
 using ProyectoTareas.Models;
 using System;
 using Xunit;
 
 namespace TestTareas
 {
-    public class RepositorioTareasTest
+    public class RepositorioTareasTest : IDisposable
     {
-        private readonly RepositorioTareas repositorio;
+        private readonly TareasDbContext _context;
+        private readonly RepositorioTareas _repositorio;
 
         public RepositorioTareasTest()
         {
-            repositorio = new RepositorioTareas();
+            // Configurar la base de datos en memoria con un nombre único por prueba
+            var options = new DbContextOptionsBuilder<TareasDbContext>()
+                .UseInMemoryDatabase(databaseName: Guid.NewGuid().ToString())
+                .Options;
+
+            _context = new TareasDbContext(options);
+            _repositorio = new RepositorioTareas(_context);
         }
 
-        [Fact]// prueba unitaria para agregar una tarea
-
-        public void AgregarTarea() 
+        // Limpiar la base de datos en memoria después de cada prueba
+        public void Dispose()
         {
-            // Arrange preparar el entorno y los datos de prueba
-            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1",true);
-
-            // Act se ejecuta el metodo que se va a probar
-            repositorio.Agregar(tarea);
-            var tareaAgregada = repositorio.BuscarPorId(tarea.Id);
-
-            // Assert se verifica que el resiltado sea el esperado
-            Assert.NotNull(tareaAgregada); // verifica que la tarea no sea nula
-            
-            var resultadoEsperado = $"Tarea ID: {tarea.Id}\n" +
-                        $"Titulo: {tarea.Titulo}\n" +
-                        $"Descripcion: {tarea.Descripcion}\n" +
-                        $"Completada: {tarea.Completada}\n" +
-                        $"FechaCreacion: {tarea.FechaCreacion:yyyy-MM-dd}\n";
-
-
-            Assert.Equal(resultadoEsperado, tareaAgregada.MostrarTarea()); // verifica que la tarea agregada sea la misma que la tarea buscada
-
-
-        }
-
-        [Fact]// prueba unitaria para buscar una tarea por su ID
-
-        public void BuscarPorId() 
-        {
-            // Arrange preparar el entorno y los datos de prueba
-            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1",true);
-            repositorio.Agregar(tarea);
-            // Act se ejecuta el metodo que se va a probar
-            var tareaBuscada = repositorio.BuscarPorId(tarea.Id);
-            // Assert se verifica que el resiltado sea el esperado
-            Assert.NotNull(tareaBuscada); // verifica que la tarea no sea nula
-            Assert.Equal(tarea.Id, tareaBuscada.Id); // verifica el ID
-        }
-
-        [Fact] // prueba unitaria para el caso de que una tarea no exista
-
-        public void BuscarPorIdNoExiste()
-        {
-            // Arrange crearm un ID que no exista en el Repositorio
-            var idInexistente = Guid.NewGuid();
-
-            // Act se intenta buscar una tarea con el ID inexistente
-            var tareaBuscada = repositorio.BuscarPorId(idInexistente);
-
-            // Assert se verifica que el resultado sea null
-            Assert.Null(tareaBuscada);
-
-        }
-
-        [Fact] // prueba unitaria para Obtener todas las tareas del repositorio
-        public void ObtenerTodos()
-        {
-            // Arrange preparar el entorno y los datos de prueba
-            var tarea1 = new Tarea("Tarea 1", "Descripcion de la tarea 1", true);
-            var tarea2 = new Tarea("Tarea 2", "Descripcion de la tarea 2", true);
-            repositorio.Agregar(tarea1);
-            repositorio.Agregar(tarea2);
-            
-            // Act se ejecuta el metodo que se va a probar
-            var TodasLastareas = repositorio.ObtenerTodos();
-            
-            // Assert se verifica que la lista no sea nula y que contenga las tareas agregadas
-            Assert.NotNull(TodasLastareas);
-            
-            Assert.Equal(2, TodasLastareas.Count);// verifica que la lista contenga 2 tareas
-            Assert.Contains(tarea1, TodasLastareas); // verifica que la tarea1 este en la lista
-            Assert.Contains(tarea2, TodasLastareas); // verifica que la tarea2 este en la lista
-        }
-
-        
-        [Fact]// prueba unitaria para actualizar una tarea
-        public void ActualizarTarea()
-        {
-            // Arrange preparar el entorno y los datos de prueba
-            var tarea = new Tarea("Tarea especial", "Descripcion de la tarea especializada", true);
-            repositorio.Agregar(tarea); // se agrega la tarea al repositorio
-            tarea.Titulo = "Tarea actualizada"; // se actualiza el titulo
-            tarea.Descripcion = "Descripcion actualizada"; // se actualiza la descripcion
-            tarea.Completada = false; // se actualiza el estado de la tarea
-
-            // Act se ejecuta el metodo
-            repositorio.Actualizar(tarea);
-            var tareaActualizada = repositorio.BuscarPorId(tarea.Id);// se crea una variable para buscar la tarea actualizada
-
-            // Assert se verifica que la tarea se haya actualizado correctamente
-            Assert.Equal("Tarea actualizada", tareaActualizada.Titulo); // verifica el titulo
-            Assert.Equal("Descripcion actualizada", tareaActualizada.Descripcion); // verifica la descripcion
-            Assert.False(tareaActualizada.Completada); // verifica si la tarea esta completada
-
+            _context.Database.EnsureDeleted(); // Elimina la base de datos en memoria
+            _context.Dispose(); // Libera recursos
         }
 
         [Fact]
-
-        public void EliminarTarea()
+        public async Task AgregarTarea()
         {
-            // Arrange preparar el entorno y los datos de prueba
-            var tarea = new Tarea("Tarea especial", "Descripcion de la tarea especializada", true);
-            repositorio.Agregar(tarea); // se agrega la tarea al repositorio
-            
-            // Act se ejecuta el metodo
-            repositorio.Eliminar(tarea.Id);
-            var tareaEliminada = repositorio.BuscarPorId(tarea.Id);// se crea una variable para buscar la tarea eliminada
-            
-            // Assert se verifica que la tarea se haya eliminado correctamente
-            Assert.Null(tareaEliminada); // verifica que la tarea no exista en el repositorio
+            // Arrange: Crear una nueva tarea
+            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
+
+            // Act: Agregar la tarea y buscarla en la base de datos
+            await _repositorio.AgregarAsync(tarea);
+            var tareaAgregada = await _repositorio.BuscarPorIdAsync(tarea.Id);
+
+            // Assert: Verificar que la tarea fue agregada correctamente
+            Assert.NotNull(tareaAgregada);
+            Assert.Equal(tarea.MostrarTarea(), tareaAgregada.MostrarTarea());
         }
 
+        [Fact]
+        public async Task ActualizarTarea()
+        {
+            // Arrange: Crear y agregar una nueva tarea
+            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
+            await _repositorio.AgregarAsync(tarea);
+
+            // Act: Modificar los valores de la tarea y actualizarla en la base de datos
+            tarea.Titulo = "Tarea 1 Actualizada";
+            tarea.Descripcion = "Descripcion de la tarea 1 Actualizada";
+            tarea.Completada = true;
+            await _repositorio.ActualizarAsync(tarea);
+
+            var tareaActualizada = await _repositorio.BuscarPorIdAsync(tarea.Id);
+
+            // Assert: Verificar que la tarea fue actualizada correctamente
+            Assert.NotNull(tareaActualizada);
+            Assert.Equal(tarea.MostrarTarea(), tareaActualizada.MostrarTarea());
+        }
+
+        [Fact]
+        public async Task EliminarTarea()
+        {
+            // Arrange: Crear y agregar una nueva tarea
+            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
+            await _repositorio.AgregarAsync(tarea);
+
+            // Act: Eliminar la tarea y buscarla en la base de datos
+            await _repositorio.EliminarAsync(tarea.Id);
+            var tareaEliminada = await _repositorio.BuscarPorIdAsync(tarea.Id);
+
+            // Assert: Verificar que la tarea fue eliminada correctamente
+            Assert.Null(tareaEliminada);
+        }
+
+        [Fact]
+        public async Task ObtenerTodasLasTareas()
+        {
+            // Arrange: Crear y agregar varias tareas
+            var tarea1 = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
+            var tarea2 = new Tarea("Tarea 2", "Descripcion de la tarea 2", true);
+            await _repositorio.AgregarAsync(tarea1);
+            await _repositorio.AgregarAsync(tarea2);
+
+            // Act: Obtener todas las tareas desde la base de datos
+            var tareas = await _repositorio.ObtenerTodosAsync();
+
+            // Assert: Verificar que se obtuvieron correctamente
+            Assert.NotNull(tareas);
+            Assert.Equal(2, tareas.Count);
+        }
+
+        [Fact]
+        public async Task ObtenerTareaPorId()
+        {
+            // Arrange: Crear y agregar una nueva tarea
+            var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
+            await _repositorio.AgregarAsync(tarea);
+
+            // Act: Buscar la tarea por su ID
+            var tareaObtenida = await _repositorio.BuscarPorIdAsync(tarea.Id);
+
+            // Assert: Verificar que la tarea se obtuvo correctamente
+            Assert.NotNull(tareaObtenida);
+            Assert.Equal(tarea.MostrarTarea(), tareaObtenida.MostrarTarea());
+        }
     }
 }

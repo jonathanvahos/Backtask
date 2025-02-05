@@ -18,7 +18,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tarea"
+                    "$ref": "#/components/schemas/TareaDTO"
                   }
                 }
               },
@@ -26,7 +26,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tarea"
+                    "$ref": "#/components/schemas/TareaDTO"
                   }
                 }
               },
@@ -34,7 +34,7 @@
                 "schema": {
                   "type": "array",
                   "items": {
-                    "$ref": "#/components/schemas/Tarea"
+                    "$ref": "#/components/schemas/TareaDTO"
                   }
                 }
               }
@@ -193,31 +193,6 @@
   },
   "components": {
     "schemas": {
-      "Tarea": {
-        "type": "object",
-        "properties": {
-          "id": {
-            "type": "string",
-            "format": "uuid"
-          },
-          "fechaCreacion": {
-            "type": "string",
-            "format": "date-time"
-          },
-          "titulo": {
-            "type": "string",
-            "nullable": true
-          },
-          "descripcion": {
-            "type": "string",
-            "nullable": true
-          },
-          "completada": {
-            "type": "boolean"
-          }
-        },
-        "additionalProperties": false
-      },
       "TareaDTO": {
         "type": "object",
         "properties": {

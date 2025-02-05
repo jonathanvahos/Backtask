@@ -3,11 +3,11 @@ namespace ProyectoTareas.Models
 {
     public interface IOpereaciones<T>
     {
-        void Agregar(T item); //Añadir una tarea
-        T BuscarPorId(Guid id); //Buscar una tarea por su ID
-        List<T> ObtenerTodos(); //Obtener todas las tareas
-        void Actualizar(T item); //Actualizar una tarea
-        void Eliminar(Guid id); //Eliminar una tarea
-        
+        Task AgregarAsync(T item); // añadir una tarea
+        Task<T> BuscarPorIdAsync(Guid id); // buscar una tarea por id
+        Task<List<T>> ObtenerTodosAsync(); // obtener todas las tareas
+        Task ActualizarAsync(T item); // actualizar una tarea
+        Task EliminarAsync(Guid id); // eliminar una tarea
+
     }
 }
