@@ -1,5 +1,5 @@
 name: .NET CI with Code Coverage
-
+# configuracion para actions
 on:
   push:
     branches: [ main, Jonathan ]  # Se ejecuta cuando hay un push a main o Jonathan
