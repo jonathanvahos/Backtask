@@ -1,5 +1,5 @@
 name: .NET CI with Code Coverage
-# configuracion para actions
+
 on:
   push:
     branches: [ main, Jonathan ]  # Se ejecuta cuando hay un push a main o Jonathan
@@ -11,40 +11,32 @@ jobs:
     runs-on: ubuntu-latest  # Usa una máquina virtual con Ubuntu
 
     steps:
-      # Paso 1: Descargar el código del repositorio
       - name: Checkout code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v3  # Paso 1: Descargar el código del repositorio
 
-      # Paso 2: Configurar .NET
       - name: Setup .NET
-        uses: actions/setup-dotnet@v3
+        uses: actions/setup-dotnet@v3  # Paso 2: Configurar .NET
         with:
           dotnet-version: '8.0'  # Especifica la versión de .NET que usas
 
-      # Paso 3: Restaurar dependencias
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore  # Paso 3: Restaurar dependencias
 
-      # Paso 4: Compilar el proyecto
       - name: Build
-        run: dotnet build --configuration Release --no-restore
+        run: dotnet build --configuration Release --no-restore  # Paso 4: Compilar el proyecto
 
-      # Paso 5: Ejecutar pruebas con cobertura de código
       - name: Run tests with coverage
-        run: |
+        run: |  # Paso 5: Ejecutar pruebas con cobertura de código
           dotnet test --no-restore --verbosity normal /p:CollectCoverage=true /p:CoverletOutputFormat=opencover
           dotnet tool install -g dotnet-reportgenerator-globaltool
           reportgenerator -reports:./**/coverage.opencover.xml -targetdir:./CoverageReport -reporttypes:Html
 
-      # Paso 6: Publicar el informe de cobertura como un artefacto
       - name: Upload coverage report
-        uses: actions/upload-artifact@v3
+        uses: actions/upload-artifact@v4  # Paso 6: Publicar el informe de cobertura como un artefacto
         with:
           name: coverage-report
           path: ./CoverageReport
 
-      # Paso 7: Notificar por correo electrónico si el flujo de trabajo falla
       - name: Notify on failure
-        if: failure()  # Solo se ejecuta si el flujo de trabajo falla
-        run: |
-          echo "Las pruebas han fallado. Revisa los logs en GitHub Actions."
+        if: failure()  # Paso 7: Notificar por correo electrónico si el flujo de trabajo falla
+        run: echo "Las pruebas han fallado. Revisa los logs en GitHub Actions."
