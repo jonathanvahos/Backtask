@@ -22,6 +22,7 @@ public class TareasControllerTest
     }
 
     [Fact]
+    // Test para obtener todas las tareas
     public async Task GetTareas()
     {
         var tareas = new List<Tarea>
@@ -39,6 +40,7 @@ public class TareasControllerTest
     }
 
     [Fact]
+    // Test para obtener una tarea por id
     public async Task GetTareaId()
     {
         var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false);
@@ -49,7 +51,7 @@ public class TareasControllerTest
         var model = Assert.IsType<TareaDTO>(okResult.Value);
         Assert.Equal("Tarea 1", model.Titulo);
     }
-
+    // Test para añadir una tarea
     [Fact]
     public async Task PostTareas()
     {
@@ -64,6 +66,7 @@ public class TareasControllerTest
     }
 
     [Fact]
+    // Test para actualizar una tarea
     public async Task PutTarea()
     {
         var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false) { Id = Guid.NewGuid() };
@@ -88,6 +91,7 @@ public class TareasControllerTest
     }
 
     [Fact]
+    // Test para eliminar una tarea
     public async Task DeleteTarea()
     {
         var tarea = new Tarea("Tarea 1", "Descripcion de la tarea 1", false) { Id = Guid.NewGuid() };
