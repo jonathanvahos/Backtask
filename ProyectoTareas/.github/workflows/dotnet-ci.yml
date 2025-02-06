@@ -32,7 +32,7 @@ jobs:
           reportgenerator -reports:./**/coverage.opencover.xml -targetdir:./CoverageReport -reporttypes:Html
 
       - name: Upload coverage report
-        uses: actions/upload-artifact@v4  # Paso 6: Publicar el informe de cobertura como un artefacto
+        uses: actions/upload-artifact@v4  # se actualiza a la versión 4
         with:
           name: coverage-report
           path: ./CoverageReport
