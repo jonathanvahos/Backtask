@@ -7,7 +7,7 @@ namespace ProyectoTareas.Mappings
     // Esta clase define los mapeos entre objetos.
     public class MappingProfile : Profile
     {
-        // Constructor de la clase MappingProfile.
+        // Constructor de la clase MappingProfile.  
         public MappingProfile()
         {
             // Mapeo de la clase Tarea a la clase TareaDTO.
