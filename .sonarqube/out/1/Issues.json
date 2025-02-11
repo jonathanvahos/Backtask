@@ -1,0 +1,87 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "4.12.0.0",
+        "fileVersion": "4.12.0-3.24574.8 (dfa7fc6b)",
+        "semanticVersion": "4.12.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "CA1816",
+          "level": "note",
+          "message": "Change RepositorioTareasTest.Dispose() to call GC.SuppressFinalize(object). This will prevent derived types that introduce a finalizer from needing to re-implement 'IDisposable' to call it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/TestTareas/RepositorioTareasTest.cs",
+                "region": {
+                  "startLine": 27,
+                  "startColumn": 21,
+                  "endLine": 27,
+                  "endColumn": 28
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "xUnit2032",
+          "level": "note",
+          "message": "The naming of Assert.IsAssignableFrom can be confusing. An overload of Assert.IsType is available with an exact match flag which can be set to false to perform the same operation.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/TestTareas/TareasControllerTest.cs",
+                "region": {
+                  "startLine": 55,
+                  "startColumn": 25,
+                  "endLine": 55,
+                  "endColumn": 87
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "CA1816": {
+          "id": "CA1816",
+          "shortDescription": "Dispose methods should call SuppressFinalize",
+          "fullDescription": "A method that is an implementation of Dispose does not call GC.SuppressFinalize; or a method that is not an implementation of Dispose calls GC.SuppressFinalize; or a method calls GC.SuppressFinalize and passes something other than this (Me in Visual Basic).",
+          "defaultLevel": "note",
+          "helpUri": "https://learn.microsoft.com/dotnet/fundamentals/code-analysis/quality-rules/ca1816",
+          "properties": {
+            "category": "Usage",
+            "isEnabledByDefault": true,
+            "tags": [
+              "PortedFromFxCop",
+              "Telemetry",
+              "EnabledRuleInAggressiveMode"
+            ]
+          }
+        },
+        "xUnit2032": {
+          "id": "xUnit2032",
+          "shortDescription": "Type assertions based on 'assignable from' are confusingly named",
+          "defaultLevel": "note",
+          "helpUri": "https://xunit.net/xunit.analyzers/rules/xUnit2032",
+          "properties": {
+            "category": "Assertions",
+            "isEnabledByDefault": true
+          }
+        }
+      }
+    }
+  ]
+}

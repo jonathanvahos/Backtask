@@ -1,0 +1,8 @@
+[
+  {
+    "text": "Starting in January 2025, the SonarScanner for .NET will not support SonarQube versions below 9.9. Please upgrade to a newer version."
+  },
+  {
+    "text": "Multi-Language analysis is enabled. If this was not intended and you have issues such as hitting your LOC limit or analyzing unwanted files, please set \"/d:sonar.scanner.scanAll=false\" in the begin step."
+  }
+]

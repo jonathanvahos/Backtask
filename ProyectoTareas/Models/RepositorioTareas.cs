@@ -24,7 +24,7 @@ namespace ProyectoTareas.Models
             await _context.SaveChangesAsync();
         }
 
-        // Método para buscar una tarea por su ID11
+        // Método para buscar una tarea por su IDI
         public async Task<Tarea> BuscarPorIdAsync(Guid id)
         {
             return await _context.Tareas.FindAsync(id);
