@@ -289,3 +289,4 @@ C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\Proyect
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\obj\Debug\net8.0\ProyectoTareas.pdb
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\obj\Debug\net8.0\ProyectoTareas.genruntimeconfig.cache
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\obj\Debug\net8.0\ref\ProyectoTareas.dll
+C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

@@ -22,6 +22,6 @@ zC:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\Proyec
 yC:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Models\TareaDTO.cs 
 8
 jr	
-ó
-qC:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Program.cs" 8j!&)-@GKNr@	
-"#$%&'()*+./012356789;<>ABCDEHILOPQRSTUWXYZ[\x‚""$&.012578;<>ACDHILOQRSTWXY
+Î
+qC:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Program.cs 8j	!&1:r,	
+"#$%&'()*,-/234568;=?ABCDx‚"$&,-/2458;=?A

@@ -1,7 +1,7 @@
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Controllers\TareasController.cs
-GetTareas 9
+GetTareas 4
 GetTareas -1
-GetTarea 5
+GetTarea 4
 GetTarea -1
 PostTareas 4
 PostTareas -1
@@ -11,7 +11,7 @@ DeleteTareas 4
 DeleteTareas -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Data\TareasDbContext.cs
-OnModelCreating 12
+OnModelCreating 6
 OnModelCreating -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Mappings\MappingProfile.cs
@@ -19,11 +19,11 @@ C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\Proyect
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Migrations\20250121153019_InitialCreate.cs
 Up 4
 Up -1
-Down 48
+Down 5
 Down -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Migrations\20250121153019_InitialCreate.Designer.cs
-BuildTargetModel 6
+BuildTargetModel 4
 BuildTargetModel -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Migrations\TareasDbContextModelSnapshot.cs
@@ -33,9 +33,9 @@ BuildModel -1
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Models\IOpereaciones.cs
 AgregarAsync 4
 AgregarAsync -1
-BuscarPorIdAsync 4
+BuscarPorIdAsync 3
 BuscarPorIdAsync -1
-ObtenerTodosAsync 4
+ObtenerTodosAsync 3
 ObtenerTodosAsync -1
 ActualizarAsync 4
 ActualizarAsync -1
@@ -43,19 +43,19 @@ EliminarAsync 4
 EliminarAsync -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Models\RepositorioTareas.cs
-AgregarAsync 5
+AgregarAsync 3
 AgregarAsync -1
 BuscarPorIdAsync 4
 BuscarPorIdAsync -1
-ObtenerTodosAsync 4
+ObtenerTodosAsync 3
 ObtenerTodosAsync -1
-ActualizarAsync 5
+ActualizarAsync 3
 ActualizarAsync -1
-EliminarAsync 4
+EliminarAsync 3
 EliminarAsync -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Models\Tarea.cs
-MostrarTarea 16
+MostrarTarea 4
 MostrarTarea -1
 
 C:\Users\jonathan.vahos\OneDrive - SoftwareOne\Desktop\Proyecto Practica\ProyectoTareas\ProyectoTareas\Models\TareaBase.cs

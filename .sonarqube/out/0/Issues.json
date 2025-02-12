@@ -282,31 +282,10 @@
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Program.cs",
                 "region": {
-                  "startLine": 9,
+                  "startLine": 8,
                   "startColumn": 18,
-                  "endLine": 9,
+                  "endLine": 8,
                   "endColumn": 25
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2292",
-          "level": "warning",
-          "message": "Make this an auto-implemented property and remove its backing field.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 25,
-                  "endLine": 18,
-                  "endColumn": 38
                 }
               }
             }
@@ -337,18 +316,39 @@
           }
         },
         {
+          "ruleId": "S101",
+          "level": "warning",
+          "message": "Rename class 'TareaDTO' to match pascal case naming rules, consider using 'TareaDto'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaDTO.cs",
+                "region": {
+                  "startLine": 3,
+                  "startColumn": 18,
+                  "endLine": 3,
+                  "endColumn": 26
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2292",
           "level": "warning",
           "message": "Make this an auto-implemented property and remove its backing field.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/Tarea.cs",
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 23,
-                  "endLine": 13,
-                  "endColumn": 29
+                  "startLine": 18,
+                  "startColumn": 25,
+                  "endLine": 18,
+                  "endColumn": 38
                 }
               }
             }
@@ -400,18 +400,18 @@
           }
         },
         {
-          "ruleId": "S101",
+          "ruleId": "S2292",
           "level": "warning",
-          "message": "Rename class 'TareaDTO' to match pascal case naming rules, consider using 'TareaDto'.",
+          "message": "Make this an auto-implemented property and remove its backing field.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaDTO.cs",
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/Tarea.cs",
                 "region": {
-                  "startLine": 3,
-                  "startColumn": 18,
-                  "endLine": 3,
-                  "endColumn": 26
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 29
                 }
               }
             }
@@ -507,6 +507,90 @@
         {
           "ruleId": "S109",
           "level": "warning",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 43,
+                  "startColumn": 35,
+                  "endLine": 43,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 66,
+                  "startColumn": 20,
+                  "endLine": 66,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 33,
+                  "startColumn": 13,
+                  "endLine": 33,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 69,
+                  "startColumn": 35,
+                  "endLine": 69,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
           "message": "Assign this magic number '200' to a well-named (variable|constant), and use the (variable|constant) instead.",
           "locations": [
             {
@@ -547,18 +631,18 @@
           }
         },
         {
-          "ruleId": "S109",
+          "ruleId": "S2221",
           "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 43,
-                  "startColumn": 35,
-                  "endLine": 43,
-                  "endColumn": 38
+                  "startLine": 93,
+                  "startColumn": 20,
+                  "endLine": 93,
+                  "endColumn": 29
                 }
               }
             }
@@ -673,90 +757,6 @@
           }
         },
         {
-          "ruleId": "S3900",
-          "level": "warning",
-          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 13,
-                  "endLine": 33,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3900",
-          "level": "warning",
-          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2221",
-          "level": "warning",
-          "message": "Catch a list of specific exception subtype or use exception filters instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 20,
-                  "endLine": 66,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2221",
-          "level": "warning",
-          "message": "Catch a list of specific exception subtype or use exception filters instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 20,
-                  "endLine": 93,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S109",
           "level": "warning",
           "message": "Assign this magic number '200' to a well-named (variable|constant), and use the (variable|constant) instead.",
@@ -799,18 +799,18 @@
           }
         },
         {
-          "ruleId": "S2221",
+          "ruleId": "S109",
           "level": "warning",
-          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 157,
-                  "startColumn": 20,
-                  "endLine": 157,
-                  "endColumn": 29
+                  "startLine": 96,
+                  "startColumn": 35,
+                  "endLine": 96,
+                  "endColumn": 38
                 }
               }
             }
@@ -841,18 +841,18 @@
           }
         },
         {
-          "ruleId": "S109",
+          "ruleId": "S3900",
           "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
                 "region": {
-                  "startLine": 69,
-                  "startColumn": 35,
-                  "endLine": 69,
-                  "endColumn": 38
+                  "startLine": 14,
+                  "startColumn": 13,
+                  "endLine": 14,
+                  "endColumn": 29
                 }
               }
             }
@@ -873,27 +873,6 @@
                   "startLine": 133,
                   "startColumn": 35,
                   "endLine": 133,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 160,
-                  "startColumn": 35,
-                  "endLine": 160,
                   "endColumn": 38
                 }
               }
@@ -925,48 +904,6 @@
           }
         },
         {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 96,
-                  "startColumn": 35,
-                  "endLine": 96,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S4823",
-          "level": "warning",
-          "message": "Make sure that command line arguments are used safely here.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Program.cs",
-                "region": {
-                  "startLine": 11,
-                  "startColumn": 28,
-                  "endLine": 11,
-                  "endColumn": 32
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S3900",
           "level": "warning",
           "message": "Refactor this method to add validation of parameter 'tareaDto' before using it.",
@@ -988,18 +925,18 @@
           }
         },
         {
-          "ruleId": "S109",
+          "ruleId": "S2221",
           "level": "warning",
-          "message": "Assign this magic number '60' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Program.cs",
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 50,
-                  "startColumn": 52,
-                  "endLine": 50,
-                  "endColumn": 54
+                  "startLine": 157,
+                  "startColumn": 20,
+                  "endLine": 157,
+                  "endColumn": 29
                 }
               }
             }
@@ -1011,16 +948,16 @@
         {
           "ruleId": "S109",
           "level": "warning",
-          "message": "Assign this magic number '5001' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
           "locations": [
             {
               "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Program.cs",
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 56,
-                  "startColumn": 37,
-                  "endLine": 56,
-                  "endColumn": 41
+                  "startLine": 160,
+                  "startColumn": 35,
+                  "endLine": 160,
+                  "endColumn": 38
                 }
               }
             }
@@ -1249,22 +1186,6 @@
               "C#",
               "MainSourceScope",
               "TestSourceScope"
-            ]
-          }
-        },
-        "S4823": {
-          "id": "S4823",
-          "shortDescription": "Using command line arguments is security-sensitive",
-          "fullDescription": "Using command line arguments is security-sensitive. It has led in the past to the following vulnerabilities:",
-          "defaultLevel": "warning",
-          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-4823",
-          "properties": {
-            "category": "Critical Security Hotspot",
-            "isEnabledByDefault": true,
-            "tags": [
-              "C#",
-              "MainSourceScope",
-              "NotConfigurable"
             ]
           }
         }
