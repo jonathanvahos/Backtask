@@ -143,6 +143,106 @@ namespace TestTareas
             // Verify: Verifica que el método EliminarAsync se haya llamado una vez
             _mockRepositorio.Verify(repo => repo.EliminarAsync(tarea.Id), Times.Once);
         }
+
+        [Fact]
+        public async Task GetTareas_ConExcepcion_DeberiaRetornar500()
+        {
+            // Arrange: Configura el mock para lanzar una excepción
+            var mensajeErrorOriginal = "Error al obtener las tareas";
+            _mockRepositorio.Setup(repo => repo.ObtenerTodosAsync()).
+                ThrowsAsync(new Exception(mensajeErrorOriginal));
+
+            // Act: Llama al método GetTareas del controlador
+            var result = await _tareasController.GetTareas();
+
+            //Assert : Verifica que el resultado no sea nulo
+            Assert.NotNull(result.Result);
+
+            // verifica que el resultado sea un ObjectResult con codigo 500
+            var objectResult = Assert.IsType<ObjectResult>(result.Result);
+            Assert.Equal(500, objectResult.StatusCode);
+
+            // verifica que el mensaje de error sea el esperado
+            var mensajeEsperado = $"Error al obtener las tareas: {mensajeErrorOriginal}";
+            Assert.Equal(mensajeEsperado, objectResult.Value);
+        }
+
+        [Fact]
+        public async Task GetTareaId_Inexistente_DeberiaRetornarNotFound() 
+        {
+            // Arrange: Configura el mock para devolver null
+            _mockRepositorio.Setup(repo => repo.BuscarPorIdAsync(It.IsAny<Guid>())).ReturnsAsync((Tarea)null);
+            
+            // Act: Llama al método GetTarea del controlador
+            var result = await _tareasController.GetTarea(Guid.NewGuid());
+            
+            // Assert: Verifica que el resultado sea NotFoundObjectResult
+            var notFoundResult = Assert.IsType<NotFoundObjectResult>(result.Result);
+            // Verifica que el valor sea un string
+            var model = Assert.IsType<string>(notFoundResult.Value);
+            // Verifica que el mensaje sea el esperado
+            Assert.Equal("La tarea no existe.", model);
+        }
+
+        [Fact]
+
+        public async Task PostTareas_ConExcepcion_DeberiaRetornar500()
+        {
+            // Arrange: Configura el mock para lanzar una excepción
+            var mensajeErrorOriginal = "Error al agregar la tarea";
+            _mockRepositorio.Setup(repo => repo.AgregarAsync(It.IsAny<Tarea>())).
+                ThrowsAsync(new Exception(mensajeErrorOriginal));
+            var tareaDto = new TareaDTO { Titulo = "Tarea 1", Descripcion = "Descripcion de la tarea 1", Completada = false };
+            
+            // Act: Llama al método PostTareas del controlador
+            var result = await _tareasController.PostTareas(tareaDto);
+            
+            //Assert : Verifica que el resultado no sea nulo
+            Assert.NotNull(result.Result);
+            
+            // verifica que el resultado sea un ObjectResult con codigo 500
+            var objectResult = Assert.IsType<ObjectResult>(result.Result);
+            Assert.Equal(500, objectResult.StatusCode);
+            // verifica que el mensaje de error sea el esperado
+            var mensajeEsperado = $"Error al agregar la tarea: {mensajeErrorOriginal}";
+            Assert.Equal(mensajeEsperado, objectResult.Value);
+        }
+
+        [Fact]
+        public async Task PutTarea_Inexistente_DeberiaRetornarNotFound()
+        {
+            // Arrange: Configura el mock para devolver null (simuladno que la tarea no exite)
+            _mockRepositorio.Setup(repo => repo.BuscarPorIdAsync(It.IsAny<Guid>())).ReturnsAsync((Tarea)null);
+
+            var tareaDtoUpdate = new TareaDTO
+            {
+                Id = Guid.NewGuid(),
+                Titulo = "Tarea 1 Actualizada",
+                Descripcion = "Descripcion de la tarea 1 Actualizada",
+                Completada = true
+            };
+
+            // Act: Llama al método PutTarea del controlador
+            var result = await _tareasController.PutTarea(tareaDtoUpdate.Id, tareaDtoUpdate);
+
+            // Assert: Verifica que el resultado sea NotFoundObjectResult
+            Assert.IsType<NotFoundObjectResult>(result);
+
+        }
+
+        [Fact]
+
+        public async Task DeleteTarea_Inexistente_DeberiaRetornarNotFound()
+        {
+            // Arrange: Configura el mock para devolver null (simuladno que la tarea no exite)
+            _mockRepositorio.Setup(repo => repo.BuscarPorIdAsync(It.IsAny<Guid>())).ReturnsAsync((Tarea)null);
+            
+            // Act: Llama al método DeleteTareas del controlador
+            var result = await _tareasController.DeleteTareas(Guid.NewGuid());
+            
+            // Assert: Verifica que el resultado sea NotFoundObjectResult
+            Assert.IsType<NotFoundObjectResult>(result);
+        }
     }
 }
 

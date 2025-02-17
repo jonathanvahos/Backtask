@@ -1,6 +1,0 @@
-projectKey=Aprendices.Jonathan.vahos.Task-Back
-serverUrl=https://codequality.softwareone.com
-serverVersion=8.9.10.61524
-dashboardUrl=https://codequality.softwareone.com/dashboard?id=Aprendices.Jonathan.vahos.Task-Back
-ceTaskId=AZT3Gva2l_JM8u3ooNkU
-ceTaskUrl=https://codequality.softwareone.com/api/ce/task?id=AZT3Gva2l_JM8u3ooNkU

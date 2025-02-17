@@ -14,43 +14,6 @@
         {
           "ruleId": "CS8618",
           "level": "warning",
-          "message": "Non-nullable property 'Tareas' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
-          "suppressionStates": [
-            "suppressedInSource"
-          ],
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Data/TareasDbContext.cs",
-                "region": {
-                  "startLine": 10,
-                  "startColumn": 16,
-                  "endLine": 10,
-                  "endColumn": 31
-                }
-              }
-            }
-          ],
-          "relatedLocations": [
-            {
-              "physicalLocation": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Data/TareasDbContext.cs",
-                "region": {
-                  "startLine": 16,
-                  "startColumn": 29,
-                  "endLine": 16,
-                  "endColumn": 35
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "CS8618",
-          "level": "warning",
           "message": "Non-nullable property 'Titulo' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
           "locations": [
             {
@@ -108,6 +71,43 @@
                   "startColumn": 23,
                   "endLine": 8,
                   "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "CS8618",
+          "level": "warning",
+          "message": "Non-nullable property 'Tareas' must contain a non-null value when exiting constructor. Consider adding the 'required' modifier or declaring the property as nullable.",
+          "suppressionStates": [
+            "suppressedInSource"
+          ],
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Data/TareasDbContext.cs",
+                "region": {
+                  "startLine": 10,
+                  "startColumn": 16,
+                  "endLine": 10,
+                  "endColumn": 31
+                }
+              }
+            }
+          ],
+          "relatedLocations": [
+            {
+              "physicalLocation": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Data/TareasDbContext.cs",
+                "region": {
+                  "startLine": 16,
+                  "startColumn": 29,
+                  "endLine": 16,
+                  "endColumn": 35
                 }
               }
             }
@@ -295,27 +295,6 @@
           }
         },
         {
-          "ruleId": "S2292",
-          "level": "warning",
-          "message": "Make this an auto-implemented property and remove its backing field.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
-                "region": {
-                  "startLine": 12,
-                  "startColumn": 21,
-                  "endLine": 12,
-                  "endColumn": 23
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
           "ruleId": "S101",
           "level": "warning",
           "message": "Rename class 'TareaDTO' to match pascal case naming rules, consider using 'TareaDto'.",
@@ -328,27 +307,6 @@
                   "startColumn": 18,
                   "endLine": 3,
                   "endColumn": 26
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2292",
-          "level": "warning",
-          "message": "Make this an auto-implemented property and remove its backing field.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 25,
-                  "endLine": 18,
-                  "endColumn": 38
                 }
               }
             }
@@ -387,10 +345,52 @@
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/Tarea.cs",
                 "region": {
-                  "startLine": 25,
-                  "startColumn": 24,
-                  "endLine": 25,
-                  "endColumn": 34
+                  "startLine": 13,
+                  "startColumn": 23,
+                  "endLine": 13,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
+                "region": {
+                  "startLine": 18,
+                  "startColumn": 25,
+                  "endLine": 18,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2292",
+          "level": "warning",
+          "message": "Make this an auto-implemented property and remove its backing field.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/TareaBase.cs",
+                "region": {
+                  "startLine": 12,
+                  "startColumn": 21,
+                  "endLine": 12,
+                  "endColumn": 23
                 }
               }
             }
@@ -408,10 +408,52 @@
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Models/Tarea.cs",
                 "region": {
-                  "startLine": 13,
-                  "startColumn": 23,
-                  "endLine": 13,
-                  "endColumn": 29
+                  "startLine": 25,
+                  "startColumn": 24,
+                  "endLine": 25,
+                  "endColumn": 34
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '200' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 85,
+                  "endLine": 22,
+                  "endColumn": 88
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 90,
+                  "endLine": 23,
+                  "endColumn": 93
                 }
               }
             }
@@ -433,6 +475,132 @@
                   "startColumn": 9,
                   "endLine": 25,
                   "endColumn": 15
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3254",
+          "level": "warning",
+          "message": "Remove this default value assigned to parameter 'nullable'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 21,
+                  "startColumn": 71,
+                  "endLine": 21,
+                  "endColumn": 86
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3254",
+          "level": "warning",
+          "message": "Remove this default value assigned to parameter 'nullable'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 22,
+                  "startColumn": 90,
+                  "endLine": 22,
+                  "endColumn": 105
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3254",
+          "level": "warning",
+          "message": "Remove this default value assigned to parameter 'nullable'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 23,
+                  "startColumn": 95,
+                  "endLine": 23,
+                  "endColumn": 110
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3254",
+          "level": "warning",
+          "message": "Remove this default value assigned to parameter 'nullable'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 24,
+                  "startColumn": 66,
+                  "endLine": 24,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3254",
+          "level": "warning",
+          "message": "Remove this default value assigned to parameter 'nullable'.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 25,
+                  "startColumn": 79,
+                  "endLine": 25,
+                  "endColumn": 94
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 17,
+                  "startColumn": 13,
+                  "endLine": 17,
+                  "endColumn": 29
                 }
               }
             }
@@ -484,6 +652,27 @@
           }
         },
         {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 13,
+                  "endLine": 36,
+                  "endColumn": 29
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
           "ruleId": "S2221",
           "level": "warning",
           "message": "Catch a list of specific exception subtype or use exception filters instead.",
@@ -496,258 +685,6 @@
                   "startColumn": 20,
                   "endLine": 40,
                   "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 43,
-                  "startColumn": 35,
-                  "endLine": 43,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2221",
-          "level": "warning",
-          "message": "Catch a list of specific exception subtype or use exception filters instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 66,
-                  "startColumn": 20,
-                  "endLine": 66,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3900",
-          "level": "warning",
-          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 33,
-                  "startColumn": 13,
-                  "endLine": 33,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 69,
-                  "startColumn": 35,
-                  "endLine": 69,
-                  "endColumn": 38
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '200' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 85,
-                  "endLine": 19,
-                  "endColumn": 88
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 90,
-                  "endLine": 20,
-                  "endColumn": 93
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S2221",
-          "level": "warning",
-          "message": "Catch a list of specific exception subtype or use exception filters instead.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
-                "region": {
-                  "startLine": 93,
-                  "startColumn": 20,
-                  "endLine": 93,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3254",
-          "level": "warning",
-          "message": "Remove this default value assigned to parameter 'nullable'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 18,
-                  "startColumn": 71,
-                  "endLine": 18,
-                  "endColumn": 86
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3254",
-          "level": "warning",
-          "message": "Remove this default value assigned to parameter 'nullable'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 19,
-                  "startColumn": 90,
-                  "endLine": 19,
-                  "endColumn": 105
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3254",
-          "level": "warning",
-          "message": "Remove this default value assigned to parameter 'nullable'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 20,
-                  "startColumn": 95,
-                  "endLine": 20,
-                  "endColumn": 110
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3254",
-          "level": "warning",
-          "message": "Remove this default value assigned to parameter 'nullable'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 21,
-                  "startColumn": 66,
-                  "endLine": 21,
-                  "endColumn": 81
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S3254",
-          "level": "warning",
-          "message": "Remove this default value assigned to parameter 'nullable'.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 22,
-                  "startColumn": 79,
-                  "endLine": 22,
-                  "endColumn": 94
                 }
               }
             }
@@ -807,9 +744,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 96,
+                  "startLine": 43,
                   "startColumn": 35,
-                  "endLine": 96,
+                  "endLine": 43,
                   "endColumn": 38
                 }
               }
@@ -828,9 +765,9 @@
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 130,
+                  "startLine": 66,
                   "startColumn": 20,
-                  "endLine": 130,
+                  "endLine": 66,
                   "endColumn": 29
                 }
               }
@@ -841,39 +778,18 @@
           }
         },
         {
-          "ruleId": "S3900",
+          "ruleId": "S2221",
           "level": "warning",
-          "message": "Refactor this method to add validation of parameter 'migrationBuilder' before using it.",
-          "locations": [
-            {
-              "resultFile": {
-                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Migrations/20250121153019_InitialCreate.cs",
-                "region": {
-                  "startLine": 14,
-                  "startColumn": 13,
-                  "endLine": 14,
-                  "endColumn": 29
-                }
-              }
-            }
-          ],
-          "properties": {
-            "warningLevel": 1
-          }
-        },
-        {
-          "ruleId": "S109",
-          "level": "warning",
-          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 133,
-                  "startColumn": 35,
-                  "endLine": 133,
-                  "endColumn": 38
+                  "startLine": 93,
+                  "startColumn": 20,
+                  "endLine": 93,
+                  "endColumn": 29
                 }
               }
             }
@@ -904,18 +820,60 @@
           }
         },
         {
-          "ruleId": "S3900",
+          "ruleId": "S109",
           "level": "warning",
-          "message": "Refactor this method to add validation of parameter 'tareaDto' before using it.",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
           "locations": [
             {
               "resultFile": {
                 "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
                 "region": {
-                  "startLine": 107,
-                  "startColumn": 27,
-                  "endLine": 107,
-                  "endColumn": 35
+                  "startLine": 69,
+                  "startColumn": 35,
+                  "endLine": 69,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 96,
+                  "startColumn": 35,
+                  "endLine": 96,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S2221",
+          "level": "warning",
+          "message": "Catch a list of specific exception subtype or use exception filters instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 130,
+                  "startColumn": 20,
+                  "endLine": 130,
+                  "endColumn": 29
                 }
               }
             }
@@ -958,6 +916,48 @@
                   "startColumn": 35,
                   "endLine": 160,
                   "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S109",
+          "level": "warning",
+          "message": "Assign this magic number '500' to a well-named (variable|constant), and use the (variable|constant) instead.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 133,
+                  "startColumn": 35,
+                  "endLine": 133,
+                  "endColumn": 38
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S3900",
+          "level": "warning",
+          "message": "Refactor this method to add validation of parameter 'tareaDto' before using it.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/Users/jonathan.vahos/OneDrive%20-%20SoftwareOne/Desktop/Proyecto%20Practica/ProyectoTareas/ProyectoTareas/Controllers/TareasController.cs",
+                "region": {
+                  "startLine": 107,
+                  "startColumn": 27,
+                  "endLine": 107,
+                  "endColumn": 35
                 }
               }
             }
