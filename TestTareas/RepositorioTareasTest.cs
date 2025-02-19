@@ -7,7 +7,7 @@ using Xunit;
 
 namespace TestTareas
 {
-    public class RepositorioTareasTest : IDisposable
+    public class RepositorioTareasTest : IDisposable // Implementar IDisposable para limpiar la base de datos en memoria
     {
         private readonly TareasDbContext _context;
         private readonly RepositorioTareas _repositorio;

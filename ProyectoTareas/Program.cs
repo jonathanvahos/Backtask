@@ -9,26 +9,38 @@ namespace ProyectoTareas
     {
         public static void Main(string[] args)
         {
+            // Crear el builder recibiendo los argumentos (esto es importante para que se pueda configurar el entorno)
             var builder = WebApplication.CreateBuilder(args);
 
             // Registrar AutoMapper
             builder.Services.AddAutoMapper(typeof(MappingProfile));
 
-            // Agregar EF Core al contenedor de servicios.
-            builder.Services.AddDbContext<TareasDbContext>(options =>
+            // Registrar el DbContext de forma condicional según el entorno
+            if (builder.Environment.IsEnvironment("Testing"))
             {
-                options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
-            });
+                // En entorno de pruebas, usar base de datos en memoria
+                builder.Services.AddDbContext<TareasDbContext>(options =>
+                {
+                    options.UseInMemoryDatabase("InMemoryDbForTesting");
+                });
+            }
+            else
+            {
+                // En otros entornos (Desarrollo, Producción), usar SQL Server
+                builder.Services.AddDbContext<TareasDbContext>(options =>
+                {
+                    options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection"));
+                });
+            }
 
             // Registrar RepositorioTareas
             builder.Services.AddScoped<IOpereaciones<Tarea>, RepositorioTareas>();
 
-            // Registrar servicios de autorizacion
+            // Registrar servicios de autorización
             builder.Services.AddAuthorization();
 
             // Registrar servicios de controladores
             builder.Services.AddControllers();
-
 
             // Agregar la configuración de CORS
             builder.Services.AddCors(options =>
@@ -46,24 +58,25 @@ namespace ProyectoTareas
 
             var app = builder.Build();
 
-            // Configure the HTTP request pipeline.
-            if (app.Environment.IsDevelopment())
+            // Configurar la tubería HTTP
+            if (app.Environment.IsDevelopment() || app.Environment.IsEnvironment("Testing"))
             {
                 app.UseSwagger();
                 app.UseSwaggerUI();
             }
 
-            app.UseHttpsRedirection();
+            // Deshabilitar la redirección HTTPS en entorno de pruebas
+            if (!app.Environment.IsEnvironment("Testing"))
+            {
+                app.UseHttpsRedirection();
+            }
 
-            // Habilitar CORS
             app.UseCors("AllowLocalhost");
-
             app.UseAuthorization();
-
             app.MapControllers();
-
             app.Run();
         }
     }
 }
+
 
